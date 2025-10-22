@@ -78,6 +78,6 @@ plt.legend()
 for spine in plt.gca().spines.values():
     spine.set_visible(False)
 
-plt.savefig("08. pyarrow_batch_optiser.png")
+plt.savefig("09. pyarrow_batch_optimiser.png")
 
 
