@@ -15,9 +15,8 @@ df2 = pl.read_parquet("data_modified.parquet")
 # assume both frames have identical schemas and column order
 match_rate = (
     (df1 == df2)
-    .select(pl.all_horizontal(pl.all()).alias("row_match"))   # row-wise AND across all columns
-    .select(pl.col("row_match").mean().alias("match_rate"))   # average of booleans
-    .to_series(0)
+    .select(pl.all_horizontal(pl.all()).alias("row_match"))
+    .select(pl.col("row_match").mean())
     .item()
 )
 
