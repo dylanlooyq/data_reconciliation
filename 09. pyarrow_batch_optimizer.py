@@ -15,7 +15,7 @@ path2 = "data_modified.parquet"
 
 #### OPTIMISER
 # Testing different batch sizes
-batch_sizes = list(range(10_000, 300_001, 10_000))  # 10k → 1M in 10k steps
+batch_sizes = list(range(10_000, 400_001, 10_000))  # 10k → 1M in 10k steps
 batch_times = []
 
 for bs in batch_sizes:

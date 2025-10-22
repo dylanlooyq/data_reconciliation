@@ -10,7 +10,7 @@ scripts = [
     # "06. recon_polars_streaming.py",
     # "07. recon_polars_vectorized.py",
     # "08. recon_pyarrow.py",
-    # "09. pyarrow_batch_optimiser.py",
+    "09. pyarrow_batch_optimizer.py",
     # "09. recon_optimised_pyarrow.py",
     "10. visualization_final_results.py",
 ]
