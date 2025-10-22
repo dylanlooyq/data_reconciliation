@@ -68,7 +68,7 @@ plt.plot(
     color = 'black',
     label=f'Trendline'
 )
-plt.title("Parquet Reconciliation Runtime vs Batch Size")
+plt.title("PyArrow Reconciliation Runtime vs Batch Size")
 plt.xlabel("Batch Size")
 plt.ylabel("Time Taken (seconds)")
 plt.grid(True)
