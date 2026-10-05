@@ -1,0 +1,513 @@
+{
+ "meta": {
+  "experiment": "worker_sweep",
+  "n_rows": 7000000,
+  "repeats": 5,
+  "workers": [
+   1,
+   2,
+   4,
+   6,
+   8,
+   12
+  ],
+  "env": {
+   "platform": "Windows-10-10.0.26200-SP0",
+   "python": "3.11.9",
+   "logical_cpus": 12,
+   "physical_cpus": 6,
+   "ram_gb": 13.9,
+   "available_ram_gb_at_start": 3.9,
+   "libraries": {
+    "pandas": "2.3.3",
+    "polars": "1.34.0",
+    "duckdb": "1.4.1",
+    "pyarrow": "21.0.0",
+    "numba": "0.68.0",
+    "numpy": "1.26.2"
+   }
+  }
+ },
+ "runs": [
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 1
+   },
+   "status": "ok",
+   "peak_mem_mb": 111.7,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 4.107665299903601,
+   "cpu_s": 4.078125,
+   "n_child_processes": 1,
+   "variant": "workers=1",
+   "repeat": 0,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 2
+   },
+   "status": "ok",
+   "peak_mem_mb": 194.8,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 2.370173699920997,
+   "cpu_s": 4.59375,
+   "n_child_processes": 2,
+   "variant": "workers=2",
+   "repeat": 0,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 4
+   },
+   "status": "ok",
+   "peak_mem_mb": 360.2,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.776990200043656,
+   "cpu_s": 6.5,
+   "n_child_processes": 4,
+   "variant": "workers=4",
+   "repeat": 0,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 6
+   },
+   "status": "ok",
+   "peak_mem_mb": 525.0,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.665790900005959,
+   "cpu_s": 9.15625,
+   "n_child_processes": 6,
+   "variant": "workers=6",
+   "repeat": 0,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 8
+   },
+   "status": "ok",
+   "peak_mem_mb": 676.4,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.7092545999912545,
+   "cpu_s": 11.90625,
+   "n_child_processes": 8,
+   "variant": "workers=8",
+   "repeat": 0,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 12
+   },
+   "status": "ok",
+   "peak_mem_mb": 931.0,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.9643714000703767,
+   "cpu_s": 15.921875,
+   "n_child_processes": 12,
+   "variant": "workers=12",
+   "repeat": 0,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 1
+   },
+   "status": "ok",
+   "peak_mem_mb": 111.7,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 3.780691499938257,
+   "cpu_s": 3.765625,
+   "n_child_processes": 1,
+   "variant": "workers=1",
+   "repeat": 1,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 2
+   },
+   "status": "ok",
+   "peak_mem_mb": 194.6,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 2.5632815998978913,
+   "cpu_s": 5.046875,
+   "n_child_processes": 2,
+   "variant": "workers=2",
+   "repeat": 1,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 4
+   },
+   "status": "ok",
+   "peak_mem_mb": 359.7,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.897366899996996,
+   "cpu_s": 6.84375,
+   "n_child_processes": 4,
+   "variant": "workers=4",
+   "repeat": 1,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 6
+   },
+   "status": "ok",
+   "peak_mem_mb": 522.8,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.9151651998981833,
+   "cpu_s": 10.34375,
+   "n_child_processes": 6,
+   "variant": "workers=6",
+   "repeat": 1,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 8
+   },
+   "status": "ok",
+   "peak_mem_mb": 680.2,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.8497935000341386,
+   "cpu_s": 13.09375,
+   "n_child_processes": 8,
+   "variant": "workers=8",
+   "repeat": 1,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 12
+   },
+   "status": "ok",
+   "peak_mem_mb": 907.4,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 2.044949400005862,
+   "cpu_s": 16.5625,
+   "n_child_processes": 12,
+   "variant": "workers=12",
+   "repeat": 1,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 1
+   },
+   "status": "ok",
+   "peak_mem_mb": 111.6,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 3.786464100005105,
+   "cpu_s": 3.734375,
+   "n_child_processes": 1,
+   "variant": "workers=1",
+   "repeat": 2,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 2
+   },
+   "status": "ok",
+   "peak_mem_mb": 194.7,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 2.451056699967012,
+   "cpu_s": 4.765625,
+   "n_child_processes": 2,
+   "variant": "workers=2",
+   "repeat": 2,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 4
+   },
+   "status": "ok",
+   "peak_mem_mb": 360.6,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.6945494000101462,
+   "cpu_s": 6.453125,
+   "n_child_processes": 4,
+   "variant": "workers=4",
+   "repeat": 2,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 6
+   },
+   "status": "ok",
+   "peak_mem_mb": 522.7,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.8003911999985576,
+   "cpu_s": 9.28125,
+   "n_child_processes": 6,
+   "variant": "workers=6",
+   "repeat": 2,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 8
+   },
+   "status": "ok",
+   "peak_mem_mb": 681.5,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.6946160999359563,
+   "cpu_s": 11.78125,
+   "n_child_processes": 8,
+   "variant": "workers=8",
+   "repeat": 2,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 12
+   },
+   "status": "ok",
+   "peak_mem_mb": 955.2,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.8872570000821725,
+   "cpu_s": 15.890625,
+   "n_child_processes": 12,
+   "variant": "workers=12",
+   "repeat": 2,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 1
+   },
+   "status": "ok",
+   "peak_mem_mb": 112.1,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 3.904353199992329,
+   "cpu_s": 3.890625,
+   "n_child_processes": 1,
+   "variant": "workers=1",
+   "repeat": 3,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 2
+   },
+   "status": "ok",
+   "peak_mem_mb": 194.5,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 2.605459399987012,
+   "cpu_s": 5.0,
+   "n_child_processes": 2,
+   "variant": "workers=2",
+   "repeat": 3,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 4
+   },
+   "status": "ok",
+   "peak_mem_mb": 359.6,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.8146942000603303,
+   "cpu_s": 6.953125,
+   "n_child_processes": 4,
+   "variant": "workers=4",
+   "repeat": 3,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 6
+   },
+   "status": "ok",
+   "peak_mem_mb": 524.6,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.7312448000302538,
+   "cpu_s": 9.3125,
+   "n_child_processes": 6,
+   "variant": "workers=6",
+   "repeat": 3,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 8
+   },
+   "status": "ok",
+   "peak_mem_mb": 681.6,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.7063737000571564,
+   "cpu_s": 11.828125,
+   "n_child_processes": 8,
+   "variant": "workers=8",
+   "repeat": 3,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 12
+   },
+   "status": "ok",
+   "peak_mem_mb": 935.1,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.963528599939309,
+   "cpu_s": 16.203125,
+   "n_child_processes": 12,
+   "variant": "workers=12",
+   "repeat": 3,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 1
+   },
+   "status": "ok",
+   "peak_mem_mb": 111.9,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 3.7797584999352694,
+   "cpu_s": 3.796875,
+   "n_child_processes": 1,
+   "variant": "workers=1",
+   "repeat": 4,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 2
+   },
+   "status": "ok",
+   "peak_mem_mb": 194.6,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 2.746874100062996,
+   "cpu_s": 5.359375,
+   "n_child_processes": 2,
+   "variant": "workers=2",
+   "repeat": 4,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 4
+   },
+   "status": "ok",
+   "peak_mem_mb": 360.5,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.6898436000337824,
+   "cpu_s": 6.203125,
+   "n_child_processes": 4,
+   "variant": "workers=4",
+   "repeat": 4,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 6
+   },
+   "status": "ok",
+   "peak_mem_mb": 522.7,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 2.990207500057295,
+   "cpu_s": 8.890625,
+   "n_child_processes": 6,
+   "variant": "workers=6",
+   "repeat": 4,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 8
+   },
+   "status": "ok",
+   "peak_mem_mb": 687.0,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.6789270000299439,
+   "cpu_s": 11.734375,
+   "n_child_processes": 8,
+   "variant": "workers=8",
+   "repeat": 4,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "parallel_row_groups",
+   "params": {
+    "workers": 12
+   },
+   "status": "ok",
+   "peak_mem_mb": 931.2,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.9849007000448182,
+   "cpu_s": 16.234375,
+   "n_child_processes": 12,
+   "variant": "workers=12",
+   "repeat": 4,
+   "n_rows": 7000000,
+   "correct": true
+  }
+ ]
+}

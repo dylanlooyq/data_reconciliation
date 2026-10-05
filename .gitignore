@@ -1,0 +1,12 @@
+# Generated benchmark inputs (large; recreate with `tabrecon generate`)
+data/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+
+# Numba JIT cache
+*.nbi
+*.nbc

@@ -1,0 +1,902 @@
+{
+ "meta": {
+  "experiment": "batch_sweep",
+  "n_rows": 7000000,
+  "repeats": 5,
+  "batch_sizes": [
+   10000,
+   20000,
+   40000,
+   80000,
+   131072,
+   250000,
+   500000,
+   1000000,
+   2000000,
+   3500000,
+   7000000
+  ]
+ },
+ "runs": [
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 10000
+   },
+   "status": "ok",
+   "peak_mem_mb": 81.4,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 2.302334400010295,
+   "cpu_s": 10.5625,
+   "n_child_processes": 0,
+   "variant": "batch=10000",
+   "repeat": 0,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 20000
+   },
+   "status": "ok",
+   "peak_mem_mb": 168.3,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.906638600048609,
+   "cpu_s": 9.40625,
+   "n_child_processes": 0,
+   "variant": "batch=20000",
+   "repeat": 0,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 40000
+   },
+   "status": "ok",
+   "peak_mem_mb": 226.7,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.5477997999405488,
+   "cpu_s": 8.5625,
+   "n_child_processes": 0,
+   "variant": "batch=40000",
+   "repeat": 0,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 80000
+   },
+   "status": "ok",
+   "peak_mem_mb": 293.0,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2745964000932872,
+   "cpu_s": 7.109375,
+   "n_child_processes": 0,
+   "variant": "batch=80000",
+   "repeat": 0,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 131072
+   },
+   "status": "ok",
+   "peak_mem_mb": 344.9,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.18994950002525,
+   "cpu_s": 7.28125,
+   "n_child_processes": 0,
+   "variant": "batch=131072",
+   "repeat": 0,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 250000
+   },
+   "status": "ok",
+   "peak_mem_mb": 414.9,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2436624999390915,
+   "cpu_s": 7.328125,
+   "n_child_processes": 0,
+   "variant": "batch=250000",
+   "repeat": 0,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 500000
+   },
+   "status": "ok",
+   "peak_mem_mb": 527.0,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2646991999354213,
+   "cpu_s": 7.78125,
+   "n_child_processes": 0,
+   "variant": "batch=500000",
+   "repeat": 0,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 1000000
+   },
+   "status": "ok",
+   "peak_mem_mb": 608.3,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.3614941000705585,
+   "cpu_s": 7.765625,
+   "n_child_processes": 0,
+   "variant": "batch=1000000",
+   "repeat": 0,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 2000000
+   },
+   "status": "ok",
+   "peak_mem_mb": 893.0,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.241531000006944,
+   "cpu_s": 7.421875,
+   "n_child_processes": 0,
+   "variant": "batch=2000000",
+   "repeat": 0,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 3500000
+   },
+   "status": "ok",
+   "peak_mem_mb": 1207.1,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2839271000120789,
+   "cpu_s": 7.640625,
+   "n_child_processes": 0,
+   "variant": "batch=3500000",
+   "repeat": 0,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 7000000
+   },
+   "status": "ok",
+   "peak_mem_mb": 1381.7,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.349401899962686,
+   "cpu_s": 7.984375,
+   "n_child_processes": 0,
+   "variant": "batch=7000000",
+   "repeat": 0,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 10000
+   },
+   "status": "ok",
+   "peak_mem_mb": 89.7,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.764297700021416,
+   "cpu_s": 8.21875,
+   "n_child_processes": 0,
+   "variant": "batch=10000",
+   "repeat": 1,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 20000
+   },
+   "status": "ok",
+   "peak_mem_mb": 175.1,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.4675332000479102,
+   "cpu_s": 7.71875,
+   "n_child_processes": 0,
+   "variant": "batch=20000",
+   "repeat": 1,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 40000
+   },
+   "status": "ok",
+   "peak_mem_mb": 233.3,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2426839999388903,
+   "cpu_s": 7.265625,
+   "n_child_processes": 0,
+   "variant": "batch=40000",
+   "repeat": 1,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 80000
+   },
+   "status": "ok",
+   "peak_mem_mb": 296.5,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2634940000716597,
+   "cpu_s": 7.703125,
+   "n_child_processes": 0,
+   "variant": "batch=80000",
+   "repeat": 1,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 131072
+   },
+   "status": "ok",
+   "peak_mem_mb": 379.7,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.149958400055766,
+   "cpu_s": 7.75,
+   "n_child_processes": 0,
+   "variant": "batch=131072",
+   "repeat": 1,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 250000
+   },
+   "status": "ok",
+   "peak_mem_mb": 442.4,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2428436999907717,
+   "cpu_s": 7.6875,
+   "n_child_processes": 0,
+   "variant": "batch=250000",
+   "repeat": 1,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 500000
+   },
+   "status": "ok",
+   "peak_mem_mb": 518.1,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2684446000494063,
+   "cpu_s": 6.90625,
+   "n_child_processes": 0,
+   "variant": "batch=500000",
+   "repeat": 1,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 1000000
+   },
+   "status": "ok",
+   "peak_mem_mb": 657.0,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.241421699989587,
+   "cpu_s": 7.5,
+   "n_child_processes": 0,
+   "variant": "batch=1000000",
+   "repeat": 1,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 2000000
+   },
+   "status": "ok",
+   "peak_mem_mb": 910.7,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.192076199920848,
+   "cpu_s": 7.984375,
+   "n_child_processes": 0,
+   "variant": "batch=2000000",
+   "repeat": 1,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 3500000
+   },
+   "status": "ok",
+   "peak_mem_mb": 1192.4,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.263988699996844,
+   "cpu_s": 7.6875,
+   "n_child_processes": 0,
+   "variant": "batch=3500000",
+   "repeat": 1,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 7000000
+   },
+   "status": "ok",
+   "peak_mem_mb": 1378.7,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2506209999555722,
+   "cpu_s": 7.796875,
+   "n_child_processes": 0,
+   "variant": "batch=7000000",
+   "repeat": 1,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 10000
+   },
+   "status": "ok",
+   "peak_mem_mb": 90.5,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.775656999903731,
+   "cpu_s": 7.203125,
+   "n_child_processes": 0,
+   "variant": "batch=10000",
+   "repeat": 2,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 20000
+   },
+   "status": "ok",
+   "peak_mem_mb": 168.4,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.5026493000332266,
+   "cpu_s": 8.21875,
+   "n_child_processes": 0,
+   "variant": "batch=20000",
+   "repeat": 2,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 40000
+   },
+   "status": "ok",
+   "peak_mem_mb": 230.3,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.3709597999695688,
+   "cpu_s": 7.046875,
+   "n_child_processes": 0,
+   "variant": "batch=40000",
+   "repeat": 2,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 80000
+   },
+   "status": "ok",
+   "peak_mem_mb": 303.6,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2688704999163747,
+   "cpu_s": 7.453125,
+   "n_child_processes": 0,
+   "variant": "batch=80000",
+   "repeat": 2,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 131072
+   },
+   "status": "ok",
+   "peak_mem_mb": 340.5,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2313453999813646,
+   "cpu_s": 7.546875,
+   "n_child_processes": 0,
+   "variant": "batch=131072",
+   "repeat": 2,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 250000
+   },
+   "status": "ok",
+   "peak_mem_mb": 419.5,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2338114000158384,
+   "cpu_s": 7.734375,
+   "n_child_processes": 0,
+   "variant": "batch=250000",
+   "repeat": 2,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 500000
+   },
+   "status": "ok",
+   "peak_mem_mb": 501.5,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2114752000197768,
+   "cpu_s": 7.671875,
+   "n_child_processes": 0,
+   "variant": "batch=500000",
+   "repeat": 2,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 1000000
+   },
+   "status": "ok",
+   "peak_mem_mb": 607.3,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2860219000140205,
+   "cpu_s": 7.859375,
+   "n_child_processes": 0,
+   "variant": "batch=1000000",
+   "repeat": 2,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 2000000
+   },
+   "status": "ok",
+   "peak_mem_mb": 907.2,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.1964853999670595,
+   "cpu_s": 7.625,
+   "n_child_processes": 0,
+   "variant": "batch=2000000",
+   "repeat": 2,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 3500000
+   },
+   "status": "ok",
+   "peak_mem_mb": 1210.1,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.3650716999545693,
+   "cpu_s": 7.421875,
+   "n_child_processes": 0,
+   "variant": "batch=3500000",
+   "repeat": 2,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 7000000
+   },
+   "status": "ok",
+   "peak_mem_mb": 1387.1,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2675043001072481,
+   "cpu_s": 8.21875,
+   "n_child_processes": 0,
+   "variant": "batch=7000000",
+   "repeat": 2,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 10000
+   },
+   "status": "ok",
+   "peak_mem_mb": 91.9,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.659390600048937,
+   "cpu_s": 8.3125,
+   "n_child_processes": 0,
+   "variant": "batch=10000",
+   "repeat": 3,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 20000
+   },
+   "status": "ok",
+   "peak_mem_mb": 167.8,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.5032969999592751,
+   "cpu_s": 8.421875,
+   "n_child_processes": 0,
+   "variant": "batch=20000",
+   "repeat": 3,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 40000
+   },
+   "status": "ok",
+   "peak_mem_mb": 231.8,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.3852601000107825,
+   "cpu_s": 8.34375,
+   "n_child_processes": 0,
+   "variant": "batch=40000",
+   "repeat": 3,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 80000
+   },
+   "status": "ok",
+   "peak_mem_mb": 287.4,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2396366000175476,
+   "cpu_s": 7.46875,
+   "n_child_processes": 0,
+   "variant": "batch=80000",
+   "repeat": 3,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 131072
+   },
+   "status": "ok",
+   "peak_mem_mb": 363.8,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.273554699961096,
+   "cpu_s": 7.78125,
+   "n_child_processes": 0,
+   "variant": "batch=131072",
+   "repeat": 3,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 250000
+   },
+   "status": "ok",
+   "peak_mem_mb": 429.7,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2477585000451654,
+   "cpu_s": 7.359375,
+   "n_child_processes": 0,
+   "variant": "batch=250000",
+   "repeat": 3,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 500000
+   },
+   "status": "ok",
+   "peak_mem_mb": 516.5,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.1672619000310078,
+   "cpu_s": 6.21875,
+   "n_child_processes": 0,
+   "variant": "batch=500000",
+   "repeat": 3,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 1000000
+   },
+   "status": "ok",
+   "peak_mem_mb": 657.1,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2701138000702485,
+   "cpu_s": 7.4375,
+   "n_child_processes": 0,
+   "variant": "batch=1000000",
+   "repeat": 3,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 2000000
+   },
+   "status": "ok",
+   "peak_mem_mb": 899.4,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2395798000507057,
+   "cpu_s": 7.578125,
+   "n_child_processes": 0,
+   "variant": "batch=2000000",
+   "repeat": 3,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 3500000
+   },
+   "status": "ok",
+   "peak_mem_mb": 1208.3,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.3970146001083776,
+   "cpu_s": 7.578125,
+   "n_child_processes": 0,
+   "variant": "batch=3500000",
+   "repeat": 3,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 7000000
+   },
+   "status": "ok",
+   "peak_mem_mb": 1397.1,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.391307899961248,
+   "cpu_s": 7.625,
+   "n_child_processes": 0,
+   "variant": "batch=7000000",
+   "repeat": 3,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 10000
+   },
+   "status": "ok",
+   "peak_mem_mb": 92.1,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.6589826000854373,
+   "cpu_s": 7.0625,
+   "n_child_processes": 0,
+   "variant": "batch=10000",
+   "repeat": 4,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 20000
+   },
+   "status": "ok",
+   "peak_mem_mb": 172.2,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.471466499962844,
+   "cpu_s": 8.6875,
+   "n_child_processes": 0,
+   "variant": "batch=20000",
+   "repeat": 4,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 40000
+   },
+   "status": "ok",
+   "peak_mem_mb": 227.5,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.3497501000529155,
+   "cpu_s": 7.109375,
+   "n_child_processes": 0,
+   "variant": "batch=40000",
+   "repeat": 4,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 80000
+   },
+   "status": "ok",
+   "peak_mem_mb": 296.9,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2549030999653041,
+   "cpu_s": 7.46875,
+   "n_child_processes": 0,
+   "variant": "batch=80000",
+   "repeat": 4,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 131072
+   },
+   "status": "ok",
+   "peak_mem_mb": 338.7,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2649252000264823,
+   "cpu_s": 7.875,
+   "n_child_processes": 0,
+   "variant": "batch=131072",
+   "repeat": 4,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 250000
+   },
+   "status": "ok",
+   "peak_mem_mb": 430.0,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.275988999987021,
+   "cpu_s": 7.09375,
+   "n_child_processes": 0,
+   "variant": "batch=250000",
+   "repeat": 4,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 500000
+   },
+   "status": "ok",
+   "peak_mem_mb": 487.9,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2079432000173256,
+   "cpu_s": 7.953125,
+   "n_child_processes": 0,
+   "variant": "batch=500000",
+   "repeat": 4,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 1000000
+   },
+   "status": "ok",
+   "peak_mem_mb": 654.3,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.3199779000133276,
+   "cpu_s": 7.65625,
+   "n_child_processes": 0,
+   "variant": "batch=1000000",
+   "repeat": 4,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 2000000
+   },
+   "status": "ok",
+   "peak_mem_mb": 864.8,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.291505900095217,
+   "cpu_s": 7.6875,
+   "n_child_processes": 0,
+   "variant": "batch=2000000",
+   "repeat": 4,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 3500000
+   },
+   "status": "ok",
+   "peak_mem_mb": 1210.2,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.3138349999208003,
+   "cpu_s": 8.03125,
+   "n_child_processes": 0,
+   "variant": "batch=3500000",
+   "repeat": 4,
+   "n_rows": 7000000,
+   "correct": true
+  },
+  {
+   "method": "pyarrow",
+   "params": {
+    "batch_size": 7000000
+   },
+   "status": "ok",
+   "peak_mem_mb": 1398.2,
+   "match_rate": 0.9999714285714286,
+   "wall_s": 1.2212131000123918,
+   "cpu_s": 7.796875,
+   "n_child_processes": 0,
+   "variant": "batch=7000000",
+   "repeat": 4,
+   "n_rows": 7000000,
+   "correct": true
+  }
+ ]
+}

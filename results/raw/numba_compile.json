@@ -1,0 +1,17 @@
+{
+ "meta": {
+  "experiment": "numba_compile"
+ },
+ "runs": [
+  {
+   "cold_cache": {
+    "import_s": 0.5351852000458166,
+    "first_call_s": 3.2518967000069097
+   },
+   "warm_cache": {
+    "import_s": 0.47626340005081147,
+    "first_call_s": 0.6698127000126988
+   }
+  }
+ ]
+}
